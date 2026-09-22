@@ -12,6 +12,7 @@ Katalog obejmuje narzędzia, których przedmiotem jest samo prawo: akty prawne, 
 - [Narzędzia i skille prawnicze](#narzędzia-i-skille-prawnicze)
 - [Anonimizacja dokumentów](#anonimizacja-dokumentów)
 - [Modele, korpusy, benchmarki](#modele-korpusy-benchmarki)
+- [Poza progiem świeżości](#poza-progiem-świeżości)
 
 ## Zasady
 
@@ -19,7 +20,7 @@ Katalog obejmuje narzędzia, których przedmiotem jest samo prawo: akty prawne, 
 
 **Opisy własne.** Piszemy po otwarciu repozytorium. Nie kopiujemy pola `description` ani treści README.
 
-**Jeden utrzymujący, jeden wpis.** Serię powiązanych repozytoriów opisujemy w jednej linii. Lista pokazuje krajobraz, nie czyjś dorobek.
+**Jeden utrzymujący, jeden wpis.** Serię powiązanych repozytoriów opisujemy w jednej linii. Lista nie jest czyimś dorobkiem, ale mapą krajobrazu.
 
 **Chcesz zniknąć z listy?** Zgłoś issue, usuwamy bez pytania o powód.
 
@@ -37,32 +38,32 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 
 ### Dane i API państwowe
 
-- [API Sejmu / ELI](https://api.sejm.gov.pl/eli) - 🔵 Akty z Dziennika Ustaw i Monitora Polskiego, teksty jednolite, datowane listy aktów zmieniających. Tekst HTML jest strukturalny: każda jednostka redakcyjna ma stabilny identyfikator, więc podział na artykuły jest deterministyczny.
-- [SAOS](https://www.saos.org.pl) - 🔵 Orzecznictwo sądów powszechnych, Sądu Najwyższego i sądów wojskowych.
-- [CBOSA](https://orzeczenia.nsa.gov.pl) - 🔵 Centralna Baza Orzeczeń Sądów Administracyjnych.
-- [Orzeczenia KIO](https://orzeczenia.uzp.gov.pl) - 🔵 Wyroki Krajowej Izby Odwoławczej w sprawach zamówień publicznych.
-- [EUREKA](https://eureka.mf.gov.pl) - 🔵 Interpretacje i informacje podatkowe Ministerstwa Finansów.
-- [Rejestr klauzul niedozwolonych UOKiK](https://rejestr.uokik.gov.pl) - 🟡 Archiwalne wyroki SOKiK, udostępniane w wersji zanonimizowanej. Przed powołaniem się sprawdź aktualny status prawny rejestru, bo zmienił się w 2026 roku.
+- [API Sejmu / ELI](https://api.sejm.gov.pl/eli) - 🔵 Udostępnia akty z Dziennika Ustaw i Monitora Polskiego, teksty jednolite oraz datowane listy aktów zmieniających. Tekst HTML jest strukturalny — każda jednostka redakcyjna ma stabilny identyfikator, więc na artykuły dzieli się deterministycznie.
+- [SAOS](https://www.saos.org.pl) - 🔵 Zbiera orzecznictwo sądów powszechnych, Sądu Najwyższego i sądów wojskowych.
+- [CBOSA](https://orzeczenia.nsa.gov.pl) - 🔵 Gromadzi orzeczenia Naczelnego Sądu Administracyjnego i wojewódzkich sądów administracyjnych.
+- [Orzeczenia KIO](https://orzeczenia.uzp.gov.pl) - 🔵 Udostępnia wyroki Krajowej Izby Odwoławczej w sprawach zamówień publicznych.
+- [EUREKA](https://eureka.mf.gov.pl) - 🔵 Zbiera interpretacje i informacje podatkowe Ministerstwa Finansów.
+- [Rejestr klauzul niedozwolonych UOKiK](https://rejestr.uokik.gov.pl) - 🟡 Zawiera archiwalne wyroki SOKiK w wersji zanonimizowanej. Status prawny rejestru zmienił się w 2026 roku, więc sprawdź go, zanim się na niego powołasz.
 
 ### Akty prawne jako dane
 
-- [kbchojnacki](https://github.com/kbchojnacki) - ⚪ Piętnaście repozytoriów: każdy polski kodeks i Konstytucja jako historia gita, gdzie jeden commit to jedna nowelizacja w dacie wejścia w życie. Polecenie `git blame` na przepisie pokazuje, kiedy zmieniło się brzmienie. Okres przed pierwszym tekstem jednolitym jest rekonstruowany, nie cytowany, co autor zaznacza wprost.
-- [andilabs/polish-law](https://github.com/andilabs/polish-law) - 🟢 Historia prawa polskiego od 1918 roku, wraz z [zestawem danych](https://github.com/andilabs/polish-law-data).
-- [apatryda/polish-law](https://github.com/apatryda/polish-law) - 🟢 Akty prawne tłumaczone najpierw na Markdown, potem na Catalę, czyli język rules-as-code z Inrii. Układ katalogów odwzorowuje hierarchię źródeł prawa: konstytucja, ustawy, umowy międzynarodowe, rozporządzenia, akty prawa miejscowego.
-- [KrzysztofBogdan/Kodeks_cywilny](https://github.com/KrzysztofBogdan/Kodeks_cywilny) - 🟢 Kodeks cywilny jako tekst w repozytorium.
+- [kbchojnacki](https://github.com/kbchojnacki) - ⚪ Piętnaście repozytoriów: każdy polski kodeks i Konstytucja jako historia gita, gdzie jeden commit to jedna nowelizacja w dacie wejścia w życie. Polecenie `git blame` na przepisie pokazuje, kiedy zmieniło się brzmienie. Okresu przed pierwszym tekstem jednolitym autor nie cytuje, lecz rekonstruuje — i zaznacza to wprost.
+
+- [apatryda/polish-law](https://github.com/apatryda/polish-law) - 🟢 Tłumaczy akty prawne najpierw na Markdown, potem na Catalę, czyli język rules-as-code z Inrii. Układ katalogów odwzorowuje hierarchię źródeł prawa: konstytucja, ustawy, umowy międzynarodowe, rozporządzenia, akty prawa miejscowego.
 
 ### Konektory i klienty
 
-- [numikel/law-scrapper-mcp](https://github.com/numikel/law-scrapper-mcp) - ⚪ Serwer MCP nad API Sejmu: pobieranie i analiza aktów prawnych.
+- [numikel/law-scrapper-mcp](https://github.com/numikel/law-scrapper-mcp) - ⚪ Pobiera i analizuje akty prawne przez API Sejmu, jako serwer MCP.
 - [jamarpl21/prawo-pl-eli](https://github.com/jamarpl21/prawo-pl-eli) - 🟢 Prawo polskie i unijne z oficjalnych źródeł, czyli ELI Sejmu oraz CELLAR i EUR-Lex, wystawione jako agent skills.
-- [apiotrowski-afk/legal-cite-pl](https://github.com/apiotrowski-afk/legal-cite-pl) - 🟢 Serwer MCP weryfikujący aktualne brzmienie przepisu polskiego i unijnego prosto ze źródła. Ten sam utrzymujący wydaje weryfikację podmiotów w KRS i na białej liście VAT oraz pamięć trwałą dla asystentów.
-- [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS oraz prawo polskie. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
-- [miskibin/sejm-stats](https://github.com/miskibin/sejm-stats) - ⚪ Baza i serwis o pracach Sejmu, na którym stoi Asystent RP.
-- [Luzgan/lupa-na-prawo](https://github.com/Luzgan/lupa-na-prawo) - ⚪ Wyszukiwanie semantyczne w prawie polskim oraz śledzenie prac Sejmu i Senatu, jako serwer MCP.
-- [operatorit/Polish_law_updates_notifier](https://github.com/operatorit/Polish_law_updates_notifier) - ⚪ Automat N8N powiadamiający o nowelizacjach wybranych aktów.
-- [ad-m/cbosa](https://github.com/ad-m/cbosa) - ⚪ Automat przeszukujący CBOSA trzy razy dziennie pod kątem spraw o symbolu 648, czyli dostępu do informacji publicznej, i rozsyłający powiadomienia na grupę dyskusyjną.
-- [artsiom-andrasovich/polish_law_viewer](https://github.com/artsiom-andrasovich/polish_law_viewer) - ⚪ Aplikacja desktopowa w Pythonie do przeszukiwania aktów przez API Sejmu, z otwieraniem dokumentów w systemowej przeglądarce PDF.
-- [Ansvar-Systems/polish-law-mcp](https://github.com/Ansvar-Systems/polish-law-mcp) - ⚪ Baza przepisów o ochronie danych i cyberbezpieczeństwie. Repozytorium jest zarchiwizowane.
+- [apiotrowski-afk/legal-cite-pl](https://github.com/apiotrowski-afk/legal-cite-pl) - 🟢 Serwer MCP, który sprawdza aktualne brzmienie przepisu polskiego i unijnego prosto ze źródła. Ten sam utrzymujący wydaje weryfikację podmiotów w KRS i na białej liście VAT oraz pamięć trwałą dla asystentów.
+- [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS, Dziennik Ustaw z Monitorem Polskim oraz interpretacje podatkowe z EUREKI. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
+
+- [Luzgan/lupa-na-prawo](https://github.com/Luzgan/lupa-na-prawo) - ⚪ Przeszukuje prawo polskie semantycznie i śledzi prace Sejmu oraz Senatu, jako serwer MCP.
+- [operatorit/Polish_law_updates_notifier](https://github.com/operatorit/Polish_law_updates_notifier) - ⚪ Automat N8N, który powiadamia o nowelizacjach wybranych aktów.
+- [ad-m/cbosa](https://github.com/ad-m/cbosa) - ⚪ Przeszukuje CBOSA trzy razy dziennie pod kątem spraw o symbolu 648, czyli dostępu do informacji publicznej, i rozsyła powiadomienia na grupę dyskusyjną.
+- [artsiom-andrasovich/polish_law_viewer](https://github.com/artsiom-andrasovich/polish_law_viewer) - ⚪ Przeszukuje akty przez API Sejmu z aplikacji desktopowej w Pythonie i otwiera dokumenty w systemowej przeglądarce PDF.
+- [PiotrKantorowski/dziennik-upadlosciowy](https://github.com/PiotrKantorowski/dziennik-upadlosciowy) - 🟢 Monitoruje kontrahentów w KRS, Krajowym Rejestrze Zadłużonych i Monitorze Sądowym i Gospodarczym.
+- [legaion/mcp-verifier](https://github.com/legaion/mcp-verifier) - ⚪ Waliduje serwery MCP dla polskiego prawa: dokumentację, schematy narzędzi i zgodność odpowiedzi.
 
 ### Standardy i formaty
 
@@ -72,35 +73,42 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 
 ## Narzędzia i skille prawnicze
 
-- [michaleiatrak-star/Lex-Machina](https://github.com/michaleiatrak-star/Lex-Machina) - 🟢 Analityka prawa, przygotowanie pism procesowych, analiza umów i ryzyk, szesnaście dziedzin prawa, zakaz cytowania przepisów z pamięci. Istnieje [port na OpenAI Codex](https://github.com/tittlepl-baj-jk/Lex-Machina-for-OpenAI-Codex).
-- [miskibin/asystent-rp](https://github.com/miskibin/asystent-rp) - ⚪ Asystent czatowy dla obywateli, odpowiadający o prawie polskim na danych z sejm-stats.pl. Działa publicznie pod adresem chat.sejm-stats.pl.
-- [matematicsolutions/patron](https://github.com/matematicsolutions/patron) - 🟢 Self-hosted agent dla kancelarii z łańcuchem skrótów jako śladem audytowym pod art. 12 AI Act, własnym modelem i dziewięcioma edycjami językowymi. Ten sam utrzymujący wydaje pakiety skilli prawniczych, warstwę weryfikacji wyjścia modelu i ocenę gotowości kancelarii na AI.
-- [apiotrowski-afk/commercial-legal-pl](https://github.com/apiotrowski-afk/commercial-legal-pl) - 🟢 Redakcja i analiza umów B2B, IT oraz IP: baza klauzul, baza wiedzy doktrynalnej i kontrola spójności odesłań wewnętrznych.
-- [apiotrowski-afk/kancelaria-dms](https://github.com/apiotrowski-afk/kancelaria-dms) - 🟢 System obiegu dokumentów i CRM dla kancelarii, natywny dla Google Workspace, do samodzielnego hostowania.
-- [pawelkwaczynski/staleness-warnings-pl](https://github.com/pawelkwaczynski/staleness-warnings-pl) - ⚪ Prerejestrowany pomiar tego, czy modele ostrzegają o nieaktualności odpowiedzi na polskich ustawach. Zawiera kod, prompty, zamrożone fragmenty i sumy kontrolne, a klucz odpowiedzi jest zatrzymany celowo.
-- [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analiza umów kredytowych pod prawem polskim.
-- [rodorn/edoreczenia-klient](https://github.com/rodorn/edoreczenia-klient) - 🟢 Nieoficjalny klient interfejsu UA API usługi e-Doręczenia, w Pythonie.
-- [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizacja elektronicznego potwierdzenia odbioru.
+- [michaleiatrak-star/Lex-Machina](https://github.com/michaleiatrak-star/Lex-Machina) - 🟢 Analizuje prawo i umowy, przygotowuje pisma procesowe i ocenia ryzyka w szesnastu dziedzinach prawa. Zabrania cytowania przepisów z pamięci. Istnieje [port na OpenAI Codex](https://github.com/tittlepl-baj-jk/Lex-Machina-for-OpenAI-Codex).
+- [miskibin/asystent-rp](https://github.com/miskibin/asystent-rp) - ⚪ Odpowiada obywatelom na pytania o prawo polskie, korzystając z danych sejm-stats, które opisujemy w [ARCHIWUM.md](ARCHIWUM.md). Działa publicznie pod adresem chat.sejm-stats.pl.
+- [matematicsolutions/patron](https://github.com/matematicsolutions/patron) - 🟢 Agent dla kancelarii do samodzielnego hostowania. Prowadzi ślad audytowy w łańcuchu skrótów pod art. 12 AI Act, korzysta z własnego modelu i ma dziewięć edycji językowych. Ten sam utrzymujący wydaje pakiety skilli prawniczych, warstwę weryfikacji wyjścia modelu i ocenę gotowości kancelarii na AI.
+- [apiotrowski-afk/commercial-legal-pl](https://github.com/apiotrowski-afk/commercial-legal-pl) - 🟢 Redaguje i analizuje umowy B2B, IT oraz IP. Zawiera bazę klauzul, bazę wiedzy doktrynalnej i kontrolę spójności odesłań wewnętrznych.
+- [apiotrowski-afk/kancelaria-dms](https://github.com/apiotrowski-afk/kancelaria-dms) - 🟢 Prowadzi obieg dokumentów i CRM kancelarii natywnie w Google Workspace, na własnym serwerze.
+- [pawelkwaczynski](https://github.com/pawelkwaczynski) - 🟢 Dwa projekty wokół aktualności prawa. [stillaw](https://github.com/pawelkwaczynski/stillaw) sprawdza deterministycznie, czy przepis nadal obowiązuje. [staleness-warnings-pl](https://github.com/pawelkwaczynski/staleness-warnings-pl) mierzy w prerejestrowanym badaniu, czy modele same ostrzegają o nieaktualności; udostępnia kod, prompty, zamrożone fragmenty i sumy kontrolne, ale klucz odpowiedzi zatrzymuje celowo.
+- [Inexpli/Radca-prawny-AI](https://github.com/Inexpli/Radca-prawny-AI) - 🟢 Odpowiada na pytania prawne w architekturze RAG, w całości lokalnie na GPU.
+- [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
+- [rodorn/edoreczenia-klient](https://github.com/rodorn/edoreczenia-klient) - 🟢 Obsługuje interfejs UA API usługi e-Doręczenia w Pythonie. Klient nieoficjalny.
+- [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizuje elektroniczne potwierdzenie odbioru.
 
 ## Anonimizacja dokumentów
 
-Wszystkie przetwarzają dokument lokalnie, przed wysłaniem go do modelu. To warstwa, bez której praca z AI na aktach klienta nie domyka się od strony tajemnicy zawodowej.
+Wszystkie przetwarzają dokument lokalnie, zanim trafi on do modelu. Bez tej warstwy praca z AI na aktach klienta nie domyka się od strony tajemnicy zawodowej.
 
-- [paszkiewiczmichal/poufnik](https://github.com/paszkiewiczmichal/poufnik) - 🟢🟠 Aplikacja desktopowa w Tauri z silnikiem Presidio jako sidecar: import PDF, DOCX i skanów, lokalny OCR, przegląd każdego wykrycia, eksport oraz odwracalne tokeny. Poziom Basic jest darmowy i nie wymaga konta.
-- [studiogo/cenzor](https://github.com/studiogo/cenzor) - 🟢 Narzędzie wiersza poleceń w Pythonie z pełnym obiegiem: tokenizacja przed wysłaniem i podstawienie danych z powrotem w odpowiedzi modelu. Publikuje zmierzoną skuteczność wraz z metodą pomiaru.
-- [apiotrowski-afk/anon-legal-pl](https://github.com/apiotrowski-afk/anon-legal-pl) - 🟢 Presidio i spaCy, sumy kontrolne numerów PESEL, NIP i REGON, wzorce sygnatur sądowych, opcjonalny OCR.
-- [LachPawel/Lethe](https://github.com/LachPawel/Lethe) - ⚪ Podejście hybrydowe: wyrażenia regularne na dane strukturalne oraz model PLLuM na rozpoznawanie kontekstowe. Dwadzieścia cztery kategorie danych, obsługa polskiej fleksji, API REST i wiersz poleceń.
+- [paszkiewiczmichal/poufnik](https://github.com/paszkiewiczmichal/poufnik) - 🟢🟠 Aplikacja desktopowa w Tauri z silnikiem Presidio jako sidecar. Wczytuje PDF, DOCX i skany, rozpoznaje tekst lokalnie, pozwala przejrzeć każde wykrycie i eksportuje dokument z odwracalnymi tokenami. Poziom Basic jest darmowy i nie wymaga konta.
+- [studiogo/cenzor](https://github.com/studiogo/cenzor) - 🟢 Zastępuje dane tokenami przed wysłaniem do modelu i podstawia je z powrotem w odpowiedzi. Publikuje zmierzoną skuteczność razem z metodą pomiaru.
+- [apiotrowski-afk/anon-legal-pl](https://github.com/apiotrowski-afk/anon-legal-pl) - 🟢 Wykrywa dane osobowe przez Presidio i spaCy, sprawdza sumy kontrolne numerów PESEL, NIP i REGON oraz rozpoznaje wzorce sygnatur sądowych. Opcjonalnie rozpoznaje tekst ze skanów.
+- [LachPawel/Lethe](https://github.com/LachPawel/Lethe) - ⚪ Łączy wyrażenia regularne na danych strukturalnych z modelem PLLuM na rozpoznawaniu kontekstowym. Obsługuje dwadzieścia cztery kategorie danych i polską fleksję, przez API REST albo wiersz poleceń.
 
 ## Modele, korpusy, benchmarki
 
-- [speakleash](https://github.com/speakleash) - 🟢 Bielik, polski model językowy, wraz z korpusami i narzędziami. Wagi modeli są na Hugging Face, w repozytoriach są tutoriale, dostęp do korpusów i oprzyrządowanie.
-- [PLLuM](https://pllum.clarin-pl.eu) - 🟢 Polski model językowy budowany ze środków publicznych, używany między innymi przez Lethe.
-- [allegro/HerBERT](https://github.com/allegro/HerBERT) - ⚪ Model BERT dla polszczyzny, trenowany na korpusach polskich z dynamicznym maskowaniem całych słów.
-- [spaCy pl_core_news_lg](https://spacy.io/models/pl) - 🟢 Rozpoznawanie jednostek nazwanych dla polszczyzny. Stoi na nim większość narzędzi do anonimizacji.
-- [PiotrTyrakowski/PolishLawLLM-Benchmark](https://github.com/PiotrTyrakowski/PolishLawLLM-Benchmark) - ⚪ Benchmark modeli językowych na prawie polskim.
+- [speakleash](https://github.com/speakleash) - 🟢 Rozwija Bielika, polski model językowy, razem z korpusami i narzędziami. Wagi modeli leżą na Hugging Face, a w repozytoriach są tutoriale, dostęp do korpusów i oprzyrządowanie.
+- [PLLuM](https://pllum.clarin-pl.eu) - 🟢 Polski model językowy budowany ze środków publicznych. Korzysta z niego między innymi Lethe.
+
+- [spaCy pl_core_news_lg](https://spacy.io/models/pl) - 🟢 Rozpoznaje jednostki nazwane w polszczyźnie. Opiera się na nim większość narzędzi z sekcji o anonimizacji.
+- [PiotrTyrakowski/PolishLawLLM-Benchmark](https://github.com/PiotrTyrakowski/PolishLawLLM-Benchmark) - ⚪ Sprawdza modele językowe na prawie polskim.
+
+## Poza progiem świeżości
+
+Pozycje bez commita od ponad roku albo z zarchiwizowanym repozytorium trzymamy w osobnym pliku [ARCHIWUM.md](ARCHIWUM.md), razem z datą ostatniego commita. Nie znikają, bo dla zbiorów danych i modeli brak commitów nie oznacza porzucenia, a wytyczne awesome każą trzymać je poza listą główną.
 
 ## Footnotes
 
-Katalog prowadzi [Adam Piotrowski](https://github.com/apiotrowski-afk), radca prawny. Część wpisów to jego własne projekty, opisane tym samym schematem, z tymi samymi polami automatycznymi i objęte tą samą regułą *jeden utrzymujący, jeden wpis*. Kryterium włączenia: publicznie dostępne, dotyczy polskiego prawa, działa.
+Katalog prowadzi [Adam Piotrowski](https://github.com/apiotrowski-afk), radca prawny. Część wpisów to jego własne projekty. Opisuje je tym samym schematem, tymi samymi polami automatycznymi i tą samą regułą *jeden utrzymujący, jeden wpis*. Kryterium włączenia: publicznie dostępne, dotyczy polskiego prawa, działa.
+
+Powiązana lista: [ksefuj/awesome-ksef](https://github.com/ksefuj/awesome-ksef) kataloguje narzędzia KSeF, czyli warstwę, której ten katalog świadomie nie obejmuje.
 
 Licencja katalogu, czyli opisów, struktury i skryptów, to [CC BY 4.0](LICENSE). Nie obejmuje projektów, do których katalog odsyła: każdy ma własną licencję, wskazaną przy wpisie.

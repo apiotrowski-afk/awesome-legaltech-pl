@@ -22,7 +22,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 sprawdz_zywotnosc.py README.md --md > raport.md
+          python3 sprawdz_zywotnosc.py ARCHIWUM.md --md >> raport.md
           python3 sprawdz_zywotnosc.py README.md > podsumowanie.txt 2>/dev/null
+          python3 sprawdz_zywotnosc.py ARCHIWUM.md >> podsumowanie.txt 2>/dev/null
           cat podsumowanie.txt
       - name: Raport jako artefakt
         uses: actions/upload-artifact@v4

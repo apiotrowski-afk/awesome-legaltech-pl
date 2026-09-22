@@ -18,9 +18,9 @@ Narzędzie, dane albo model, których **przedmiotem jest samo prawo**: akty praw
 
 **Opisy pisz własne**, po otwarciu repozytorium. Nie kopiuj pola `description` ani treści README, bo to cudzy tekst pod cudzą licencją.
 
-**Jeden utrzymujący, jeden wpis.** Jeśli ktoś wydaje serię powiązanych repozytoriów, opisujemy ją w jednej linii z linkiem do profilu. Lista pokazuje krajobraz, nie czyjś dorobek. Dotyczy to także projektów osoby prowadzącej katalog.
+**Jeden utrzymujący, jeden wpis.** Jeśli ktoś wydaje serię powiązanych repozytoriów, opisujemy ją w jednej linii z linkiem do profilu. Lista nie jest czyimś dorobkiem, ale mapą krajobrazu. Dotyczy to także projektów osoby prowadzącej katalog.
 
-**Wpisy nieutrzymywane zostają.** Repozytorium zarchiwizowane albo bez commita od lat nie znika z listy: dostaje datę i znacznik. Czytelnik wyciąga wniosek sam. To świadoma różnica wobec typowej awesome-listy.
+**Wpisy nieutrzymywane nie znikają, ale zmieniają plik.** Repozytorium zarchiwizowane albo bez commita od ponad roku przenosimy do [ARCHIWUM.md](ARCHIWUM.md) razem z datą ostatniego commita. Czytelnik wyciąga wniosek sam. Różni nas to od typowej awesome-listy, i jest to różnica świadoma.
 
 ## Format wpisu
 
@@ -40,6 +40,7 @@ Przed wysłaniem uruchom kontrolę:
 
 ```
 python3 sprawdz_zywotnosc.py README.md
+python3 sprawdz_zywotnosc.py ARCHIWUM.md
 npx awesome-lint
 ```
 
