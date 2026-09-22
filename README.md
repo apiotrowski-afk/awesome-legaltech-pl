@@ -122,3 +122,7 @@ Brakuje czegoś? Zgłoś issue albo pull request.
 ## Licencja
 
 [CC BY 4.0](LICENSE) — korzystaj, kopiuj, przerabiaj, podaj źródło.
+
+Licencja obejmuje treść katalogu — opisy, strukturę i skrypty. Nie obejmuje
+projektów, do których katalog odsyła: każdy ma własną licencję, wskazaną
+przy wpisie.
