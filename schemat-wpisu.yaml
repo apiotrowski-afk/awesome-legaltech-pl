@@ -1,0 +1,26 @@
+# Schemat wpisu — awesome-legaltech-pl („Prawo w kodzie")
+# Zasada: pola RĘCZNE opisują, pola AUTO stwierdzają. Nigdy odwrotnie.
+
+# ── POLA RĘCZNE (człowiek, po otwarciu repo) ─────────────────────────────
+nazwa:            # jak nazywa się sam projekt
+url:              # kanoniczny link (repo albo strona projektu)
+warstwa:          # 1-4, patrz README.md
+opis:             # własna proza, max 200 znaków, PO przeczytaniu repo.
+                  # Nie kopiować description z GitHuba ani README.
+otwartosc:        # jedna z wartości poniżej — to jest wyróżnik katalogu
+                  #   kod-otwarty                     kod + licencja OSI
+                  #   zrodlo-otwarte-narzedzie-zamkniete   dane publiczne, narzędzie nie
+                  #   api-publiczne                   API dostępne, bez licencji OSS
+                  #   komercyjne-z-progiem            freemium / darmowy tier
+                  #   licencja-nieokreslona           brak pliku LICENSE
+jurysdykcja:      # PL | PL+UE | wielojurysdykcyjny
+utrzymujacy:      # link do profilu, NIE nazwisko, NIE e-mail (minimalizacja)
+zaleznosc_od:     # opcjonalnie: na czym stoi (np. "API Sejmu ELI")
+
+# ── POLA AUTO (CI, z API — nie wpisywać ręcznie) ─────────────────────────
+auto:
+  gwiazdki:
+  ostatni_commit:   # data, nie ocena
+  archived:         # true/false z API
+  licencja_api:     # SPDX z API — rozjazd z polem ręcznym = sygnał do przeglądu
+  odczyt:           # data pobrania; bez niej fakt jest bez kontekstu

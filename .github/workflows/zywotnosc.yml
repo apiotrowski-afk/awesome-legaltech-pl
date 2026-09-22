@@ -1,0 +1,33 @@
+name: Kontrola żywotności wpisów
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # poniedziałki 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sprawdz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sprawdź wpisy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 sprawdz_zywotnosc.py README.md --md > raport.md
+          python3 sprawdz_zywotnosc.py README.md > podsumowanie.txt 2>/dev/null
+          cat podsumowanie.txt
+      - name: Raport jako artefakt
+        uses: actions/upload-artifact@v4
+        with:
+          name: kontrola-zywotnosci
+          path: |
+            raport.md
+            podsumowanie.txt
