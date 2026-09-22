@@ -48,6 +48,8 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 ### Akty prawne jako dane
 
 - [kbchojnacki](https://github.com/kbchojnacki) - ⚪ Piętnaście repozytoriów: każdy polski kodeks i Konstytucja jako historia gita, gdzie jeden commit to jedna nowelizacja w dacie wejścia w życie. Polecenie `git blame` na przepisie pokazuje, kiedy zmieniło się brzmienie. Okresu przed pierwszym tekstem jednolitym autor nie cytuje, lecz rekonstruuje — i zaznacza to wprost.
+- [legalize-dev/legalize-pl](https://github.com/legalize-dev/legalize-pl) - ⚪ Polskie ustawodawstwo w Markdown, gdzie każda ustawa to plik, a każda nowelizacja to commit. Polska edycja [międzynarodowego projektu](https://github.com/legalize-dev) obejmującego 32 jurysdykcje, więc te same przepisy da się porównywać między krajami w jednym formacie.
+- [balwierz/sejm2git](https://github.com/balwierz/sejm2git) - ⚪ Pobiera akty z API Sejmu i nakłada nowelizacje, żeby odtworzyć tekst obowiązujący na daną datę. Historię materializuje w gicie: gałąź na nowelizację, scalenie w dniu wejścia w życie, wyniki głosowań w stopkach commitów.
 
 - [apatryda/polish-law](https://github.com/apatryda/polish-law) - 🟢 Tłumaczy akty prawne najpierw na Markdown, potem na Catalę, czyli język rules-as-code z Inrii. Układ katalogów odwzorowuje hierarchię źródeł prawa: konstytucja, ustawy, umowy międzynarodowe, rozporządzenia, akty prawa miejscowego.
 
@@ -56,13 +58,15 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [numikel/law-scrapper-mcp](https://github.com/numikel/law-scrapper-mcp) - ⚪ Pobiera i analizuje akty prawne przez API Sejmu, jako serwer MCP.
 - [jamarpl21/prawo-pl-eli](https://github.com/jamarpl21/prawo-pl-eli) - 🟢 Prawo polskie i unijne z oficjalnych źródeł, czyli ELI Sejmu oraz CELLAR i EUR-Lex, wystawione jako agent skills.
 - [apiotrowski-afk/legal-cite-pl](https://github.com/apiotrowski-afk/legal-cite-pl) - 🟢 Serwer MCP, który sprawdza aktualne brzmienie przepisu polskiego i unijnego prosto ze źródła. Ten sam utrzymujący wydaje weryfikację podmiotów w KRS i na białej liście VAT oraz pamięć trwałą dla asystentów.
-- [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS, Dziennik Ustaw z Monitorem Polskim oraz interpretacje podatkowe z EUREKI. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
+- [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS, Dziennik Ustaw z Monitorem Polskim oraz interpretacje podatkowe z EUREKI. Wydaje też silnik anonimizacji, serwer nad korpusem legalize oraz dwa huby skilli prawniczych, polski i angielski. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
 
 - [Luzgan/lupa-na-prawo](https://github.com/Luzgan/lupa-na-prawo) - ⚪ Przeszukuje prawo polskie semantycznie i śledzi prace Sejmu oraz Senatu, jako serwer MCP.
 - [operatorit/Polish_law_updates_notifier](https://github.com/operatorit/Polish_law_updates_notifier) - ⚪ Automat N8N, który powiadamia o nowelizacjach wybranych aktów.
 - [ad-m/cbosa](https://github.com/ad-m/cbosa) - ⚪ Przeszukuje CBOSA trzy razy dziennie pod kątem spraw o symbolu 648, czyli dostępu do informacji publicznej, i rozsyła powiadomienia na grupę dyskusyjną.
 - [artsiom-andrasovich/polish_law_viewer](https://github.com/artsiom-andrasovich/polish_law_viewer) - ⚪ Przeszukuje akty przez API Sejmu z aplikacji desktopowej w Pythonie i otwiera dokumenty w systemowej przeglądarce PDF.
-- [PiotrKantorowski/dziennik-upadlosciowy](https://github.com/PiotrKantorowski/dziennik-upadlosciowy) - 🟢 Monitoruje kontrahentów w KRS, Krajowym Rejestrze Zadłużonych i Monitorze Sądowym i Gospodarczym.
+- [PiotrKantorowski](https://github.com/PiotrKantorowski) - 🟢 [Dziennik upadłościowy](https://github.com/PiotrKantorowski/dziennik-upadlosciowy) monitoruje kontrahentów w KRS, Krajowym Rejestrze Zadłużonych i Monitorze Sądowym i Gospodarczym. [CSM for Word](https://github.com/PiotrKantorowski/csm-for-word) pseudonimizuje polskie dokumenty lokalnie i odwracalnie, wprost w Wordzie.
+- [danielmskuza-blip/Orzeczenia-MS](https://github.com/danielmskuza-blip/Orzeczenia-MS) - 🟢 Udostępnia orzeczenia sądów powszechnych z portalu Ministerstwa Sprawiedliwości.
+- [Iskra-YT/sejmium](https://github.com/Iskra-YT/sejmium) - 🟢 Śledzi prace parlamentu na API Sejmu. Przydaje się, gdy trzeba wychwycić nowelizację, zanim trafi do Dziennika Ustaw.
 - [legaion/mcp-verifier](https://github.com/legaion/mcp-verifier) - ⚪ Waliduje serwery MCP dla polskiego prawa: dokumentację, schematy narzędzi i zgodność odpowiedzi.
 
 ### Standardy i formaty
@@ -74,14 +78,16 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 ## Narzędzia i skille prawnicze
 
 - [michaleiatrak-star/Lex-Machina](https://github.com/michaleiatrak-star/Lex-Machina) - 🟢 Analizuje prawo i umowy, przygotowuje pisma procesowe i ocenia ryzyka w szesnastu dziedzinach prawa. Zabrania cytowania przepisów z pamięci. Istnieje [port na OpenAI Codex](https://github.com/tittlepl-baj-jk/Lex-Machina-for-OpenAI-Codex).
-- [miskibin/asystent-rp](https://github.com/miskibin/asystent-rp) - ⚪ Odpowiada obywatelom na pytania o prawo polskie, korzystając z danych sejm-stats, które opisujemy w [ARCHIWUM.md](ARCHIWUM.md). Działa publicznie pod adresem chat.sejm-stats.pl.
+- [miskibin](https://github.com/miskibin) - ⚪ [Asystent RP](https://github.com/miskibin/asystent-rp) odpowiada obywatelom na pytania o prawo polskie i działa publicznie pod adresem chat.sejm-stats.pl. [Tygodnik sejmowy](https://github.com/miskibin/tygodnik-sejmowy) streszcza, co dzieje się w Sejmie. Oba korzystają z danych sejm-stats, które opisujemy w [ARCHIWUM.md](ARCHIWUM.md).
 - [matematicsolutions/patron](https://github.com/matematicsolutions/patron) - 🟢 Agent dla kancelarii do samodzielnego hostowania. Prowadzi ślad audytowy w łańcuchu skrótów pod art. 12 AI Act, korzysta z własnego modelu i ma dziewięć edycji językowych. Ten sam utrzymujący wydaje pakiety skilli prawniczych, warstwę weryfikacji wyjścia modelu i ocenę gotowości kancelarii na AI.
 - [apiotrowski-afk/commercial-legal-pl](https://github.com/apiotrowski-afk/commercial-legal-pl) - 🟢 Redaguje i analizuje umowy B2B, IT oraz IP. Zawiera bazę klauzul, bazę wiedzy doktrynalnej i kontrolę spójności odesłań wewnętrznych.
 - [apiotrowski-afk/kancelaria-dms](https://github.com/apiotrowski-afk/kancelaria-dms) - 🟢 Prowadzi obieg dokumentów i CRM kancelarii natywnie w Google Workspace, na własnym serwerze.
 - [pawelkwaczynski](https://github.com/pawelkwaczynski) - 🟢 Dwa projekty wokół aktualności prawa. [stillaw](https://github.com/pawelkwaczynski/stillaw) sprawdza deterministycznie, czy przepis nadal obowiązuje. [staleness-warnings-pl](https://github.com/pawelkwaczynski/staleness-warnings-pl) mierzy w prerejestrowanym badaniu, czy modele same ostrzegają o nieaktualności; udostępnia kod, prompty, zamrożone fragmenty i sumy kontrolne, ale klucz odpowiedzi zatrzymuje celowo.
+- [a-szczudlo](https://github.com/a-szczudlo) - ⚪ Seria otwartych audytorów Creativa Legal, każdy jako skill dla Claude, ChatGPT i Codeksa. [OpenNDA](https://github.com/a-szczudlo/OpenNDA) ocenia umowę o poufności w trzynastu punktach kontrolnych z flagami ryzyka, cross-checkiem spójności i porównaniem wersji po poprawkach. Obok niego [OpenFounders](https://github.com/a-szczudlo/OpenFounders) testuje relacje wspólników sp. z o.o., [OpenGDPR](https://github.com/a-szczudlo/OpenGDPR) skanuje zgodność z RODO, a osobny audytor bierze umowy marketingowe.
+- [emilpinski/lexaro](https://github.com/emilpinski/lexaro) - ⚪ Odpowiada na pytania o prawo polskie w architekturze RAG: HyDE, wyszukiwanie hybrydowe na pgvector i BM25, rerank i cache semantyczny. Działa pod adresem lexaro.pl.
 - [Inexpli/Radca-prawny-AI](https://github.com/Inexpli/Radca-prawny-AI) - 🟢 Odpowiada na pytania prawne w architekturze RAG, w całości lokalnie na GPU.
 - [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
-- [rodorn/edoreczenia-klient](https://github.com/rodorn/edoreczenia-klient) - 🟢 Obsługuje interfejs UA API usługi e-Doręczenia w Pythonie. Klient nieoficjalny.
+- [rodorn](https://github.com/rodorn) - 🟢 [Klient e-Doręczeń](https://github.com/rodorn/edoreczenia-klient) obsługuje interfejs UA API w Pythonie, nieoficjalnie. [Radar przetargów](https://github.com/rodorn/fluxlab-przetargi-radar) śledzi zamówienia publiczne.
 - [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizuje elektroniczne potwierdzenie odbioru.
 
 ## Anonimizacja dokumentów
@@ -91,6 +97,7 @@ Wszystkie przetwarzają dokument lokalnie, zanim trafi on do modelu. Bez tej war
 - [paszkiewiczmichal/poufnik](https://github.com/paszkiewiczmichal/poufnik) - 🟢🟠 Aplikacja desktopowa w Tauri z silnikiem Presidio jako sidecar. Wczytuje PDF, DOCX i skany, rozpoznaje tekst lokalnie, pozwala przejrzeć każde wykrycie i eksportuje dokument z odwracalnymi tokenami. Poziom Basic jest darmowy i nie wymaga konta.
 - [studiogo/cenzor](https://github.com/studiogo/cenzor) - 🟢 Zastępuje dane tokenami przed wysłaniem do modelu i podstawia je z powrotem w odpowiedzi. Publikuje zmierzoną skuteczność razem z metodą pomiaru.
 - [apiotrowski-afk/anon-legal-pl](https://github.com/apiotrowski-afk/anon-legal-pl) - 🟢 Wykrywa dane osobowe przez Presidio i spaCy, sprawdza sumy kontrolne numerów PESEL, NIP i REGON oraz rozpoznaje wzorce sygnatur sądowych. Opcjonalnie rozpoznaje tekst ze skanów.
+- [sebob/donotfeedai](https://github.com/sebob/donotfeedai) - ⚪ Podmienia imiona, PESEL, NIP, IBAN, telefony, adresy i pliki na dane fikcyjne, zanim trafią do ChatGPT, Claude'a albo Gemini, i przywraca je w odpowiedzi. Bez serwera dostawcy i bez telemetrii.
 - [LachPawel/Lethe](https://github.com/LachPawel/Lethe) - ⚪ Łączy wyrażenia regularne na danych strukturalnych z modelem PLLuM na rozpoznawaniu kontekstowym. Obsługuje dwadzieścia cztery kategorie danych i polską fleksję, przez API REST albo wiersz poleceń.
 
 ## Modele, korpusy, benchmarki

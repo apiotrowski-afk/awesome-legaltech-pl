@@ -10,6 +10,8 @@ Wróć do listy głównej: [README.md](README.md).
 - [KrzysztofBogdan/Kodeks_cywilny](https://github.com/KrzysztofBogdan/Kodeks_cywilny) - 🟢 Trzyma tekst kodeksu cywilnego w repozytorium.
 - [Ansvar-Systems/polish-law-mcp](https://github.com/Ansvar-Systems/polish-law-mcp) - ⚪ Zbiera przepisy o ochronie danych i cyberbezpieczeństwie, jako serwer MCP. Repozytorium zarchiwizowane.
 - [miskibin/sejm-stats](https://github.com/miskibin/sejm-stats) - ⚪ Zbiera dane o pracach Sejmu i udostępnia je jako serwis. Korzysta z nich Asystent RP.
+- [bartekmac63/civiclens](https://github.com/bartekmac63/civiclens) - 🟢 Śledzi prace parlamentu na API Sejmu. Repozytorium zarchiwizowane.
+
 ## Narzędzia pomocnicze
 
 - [radarsu/validate-polish](https://github.com/radarsu/validate-polish) - 🟢 Waliduje numery PESEL, NIP, REGON i dowodu osobistego. Biblioteka ogólna, ale sumy kontrolne są te same, których używają narzędzia do anonimizacji.
