@@ -12,6 +12,9 @@ Wróć do listy głównej: [README.md](README.md).
 - [miskibin/sejm-stats](https://github.com/miskibin/sejm-stats) - ⚪ Zbiera dane o pracach Sejmu i udostępnia je jako serwis. Korzysta z nich Asystent RP.
 - [bartekmac63/civiclens](https://github.com/bartekmac63/civiclens) - 🟢 Śledzi prace parlamentu na API Sejmu. Repozytorium zarchiwizowane.
 
+- [zmilonas/klauzule-niedozwolone-uokik](https://github.com/zmilonas/klauzule-niedozwolone-uokik) - ⚪ Przeszukuje rejestr klauzul niedozwolonych UOKiK. Pierwsze narzędzie tego rodzaju, do dziś cytowane jako źródło formatu danych rejestru.
+- [bmajkut/land-registry-scrapper-pl](https://github.com/bmajkut/land-registry-scrapper-pl) - 🟢 Pobiera dane z przeglądarki ksiąg wieczystych przez automatyzację Playwrightem.
+
 ## Narzędzia pomocnicze
 
 - [radarsu/validate-polish](https://github.com/radarsu/validate-polish) - 🟢 Waliduje numery PESEL, NIP, REGON i dowodu osobistego. Biblioteka ogólna, ale sumy kontrolne są te same, których używają narzędzia do anonimizacji.
