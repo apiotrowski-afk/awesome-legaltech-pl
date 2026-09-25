@@ -15,7 +15,7 @@ Użycie:
 
 Wymaga zalogowanego `gh` (gh auth status) — używa jego tokenu przez gh api.
 """
-import re, sys, json, subprocess, datetime, collections
+import re, sys, json, subprocess, datetime, collections, time
 
 RE_REPO = re.compile(r'https://github\.com/([A-Za-z0-9._-]+)/([A-Za-z0-9._-]+)')
 
@@ -31,11 +31,22 @@ def zbierz(path):
             out.append(slug)
     return out
 
-def gh(endpoint):
-    r = subprocess.run(["gh", "api", endpoint], capture_output=True, text=True)
-    if r.returncode != 0:
-        return None
-    return json.loads(r.stdout)
+def gh(endpoint, proby=3):
+    """Odpytuje API. Ponawia, bo pojedyncze niepowodzenie sieciowe nie znaczy,
+    że repozytorium zniknęło — a fałszywy alarm podkopuje zaufanie do kontroli."""
+    for i in range(proby):
+        r = subprocess.run(["gh", "api", endpoint], capture_output=True, text=True)
+        if r.returncode == 0:
+            try:
+                return json.loads(r.stdout)
+            except json.JSONDecodeError:
+                return None
+        # 404 od GitHuba jest rozstrzygające; błąd sieci nie jest
+        if "Not Found" in (r.stderr or "") or "HTTP 404" in (r.stderr or ""):
+            return None
+        if i < proby - 1:
+            time.sleep(2 * (i + 1))
+    return None
 
 def main():
     if len(sys.argv) < 2:
