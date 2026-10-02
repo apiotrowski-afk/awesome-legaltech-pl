@@ -48,6 +48,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 ### Akty prawne jako dane
 
 - [kbchojnacki](https://github.com/kbchojnacki) - ⚪ Piętnaście repozytoriów: każdy polski kodeks i Konstytucja jako historia gita, gdzie jeden commit to jedna nowelizacja w dacie wejścia w życie. Polecenie `git blame` na przepisie pokazuje, kiedy zmieniło się brzmienie. Okresu przed pierwszym tekstem jednolitym autor nie cytuje, lecz rekonstruuje — i zaznacza to wprost.
+- [LexaurinTheDog](https://github.com/LexaurinTheDog) - 🟢 **106 komentarzy do polskich ustaw**, artykuł po artykule, w tym kodeks cywilny, karny, karny skarbowy, prawo o adwokaturze, AML i cyberbezpieczeństwo. Brzmienie przepisów przeniesione dosłownie z Dziennika Ustaw wraz z odnośnikami tekstu jednolitego. ⚠ Autor zaznacza wprost, że komentarz powstał **wyłącznie z urzędowego tekstu aktu, bez baz komercyjnych, a orzecznictwo nie jest jeszcze jego częścią** — to nie zastępuje komentarza z linią orzeczniczą.
 - [legalize-dev/legalize-pl](https://github.com/legalize-dev/legalize-pl) - ⚪ Polskie ustawodawstwo w Markdown, gdzie każda ustawa to plik, a każda nowelizacja to commit. Polska edycja [międzynarodowego projektu](https://github.com/legalize-dev) obejmującego 32 jurysdykcje, więc te same przepisy da się porównywać między krajami w jednym formacie.
 - [balwierz/sejm2git](https://github.com/balwierz/sejm2git) - ⚪ Pobiera akty z API Sejmu i nakłada nowelizacje, żeby odtworzyć tekst obowiązujący na daną datę. Historię materializuje w gicie: gałąź na nowelizację, scalenie w dniu wejścia w życie, wyniki głosowań w stopkach commitów.
 
@@ -56,6 +57,8 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 ### Konektory i klienty
 
 - [numikel/law-scrapper-mcp](https://github.com/numikel/law-scrapper-mcp) - ⚪ Pobiera i analizuje akty prawne przez API Sejmu, jako serwer MCP.
+- [leniwyposel/sejm-mcp](https://github.com/leniwyposel/sejm-mcp) - 🟢 Serwer MCP do API Sejmu i bazy aktów prawnych ELI.
+- [ObywatelTB/prawmi-mcp](https://github.com/ObywatelTB/prawmi-mcp) - 🟢 Lokalna nakładka stdio na zdalny serwer PrawMi, udostępniająca polskie akty prawne.
 - [jamarpl21/prawo-pl-eli](https://github.com/jamarpl21/prawo-pl-eli) - 🟢 Prawo polskie i unijne z oficjalnych źródeł, czyli ELI Sejmu oraz CELLAR i EUR-Lex, wystawione jako agent skills.
 - [apiotrowski-afk/legal-cite-pl](https://github.com/apiotrowski-afk/legal-cite-pl) - 🟢 Serwer MCP, który sprawdza aktualne brzmienie przepisu polskiego i unijnego prosto ze źródła. Ten sam utrzymujący wydaje weryfikację podmiotów w KRS i na białej liście VAT oraz pamięć trwałą dla asystentów.
 - [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS, Dziennik Ustaw z Monitorem Polskim oraz interpretacje podatkowe z EUREKI. Wydaje też silnik anonimizacji, serwer nad korpusem legalize, infrastrukturę wiedzy prawnej *Repertorium* oraz dwa huby skilli prawniczych, polski i angielski. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
@@ -93,6 +96,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [DawidZabek/leaseguard](https://github.com/DawidZabek/leaseguard) - ⚪ Analizuje wklejoną umowę najmu mieszkania z perspektywy najemcy i wskazuje postanowienia niekorzystne.
 - [dominikloza/lawer-up](https://github.com/dominikloza/lawer-up) - ⚪ Pozwala wgrać umowę i rozmawiać o niej z asystentem, z naciskiem na wykrywanie ukrytych ryzyk.
 - [emilpinski/lexaro](https://github.com/emilpinski/lexaro) - ⚪ Odpowiada na pytania o prawo polskie w architekturze RAG: HyDE, wyszukiwanie hybrydowe na pgvector i BM25, rerank i cache semantyczny. Działa pod adresem lexaro.pl.
+- [PrzemoPle/zalaczniki](https://github.com/PrzemoPle/zalaczniki) - 🟢 Aplikacja macOS, która ze skanów buduje listę załączników do pozwu, rozpoznając tekst lokalnie.
 - [Inexpli/Radca-prawny-AI](https://github.com/Inexpli/Radca-prawny-AI) - 🟢 Odpowiada na pytania prawne w architekturze RAG, w całości lokalnie na GPU.
 - [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
 - [rodorn](https://github.com/rodorn) - 🟢 [Klient e-Doręczeń](https://github.com/rodorn/edoreczenia-klient) obsługuje interfejs UA API w Pythonie, nieoficjalnie. [Radar przetargów](https://github.com/rodorn/fluxlab-przetargi-radar) śledzi zamówienia publiczne.
@@ -119,6 +123,8 @@ Wszystkie przetwarzają dokument lokalnie, zanim trafi on do modelu. Bez tej war
 - [brokeboiflex/nodeusz](https://github.com/brokeboiflex/nodeusz) - ⚪ Natywne wiązania Node.js do analizatora morfologicznego Morfeusz2. Odmiana polskich nazwisk i nazw to warunek działania anonimizacji.
 - [JuDDGES na Hugging Face](https://huggingface.co/JuDDGES) - 🟡 Korpusy orzeczeń: [`pl-court-raw`](https://huggingface.co/datasets/JuDDGES/pl-court-raw) z pełną treścią wyroków z portalu Ministerstwa Sprawiedliwości wraz z metadanymi oraz [`pl-appealcourt-criminal`](https://huggingface.co/datasets/JuDDGES/pl-appealcourt-criminal) — 6050 wyroków karnych sądów apelacyjnych z lat 2003–2024.
 - [PiotrSty/uzp-orzeczenia-pl](https://huggingface.co/datasets/PiotrSty/uzp-orzeczenia-pl) - 🟡 Orzeczenia w sprawach zamówień publicznych: KIO, sądy okręgowe, sądy apelacyjne i Sąd Najwyższy, z oficjalnej wyszukiwarki UZP.
+- [matgier/orzeczenia-tezy-dashboard](https://github.com/matgier/orzeczenia-tezy-dashboard) - ⚪ Mierzy jakość wydobywania tez prawnych z uzasadnień: model wyciąga tezy, walidator sprawdza je wobec dziewięciu kryteriów, a arkusz referencyjny służy wyłącznie do oceny.
+- [Alght/Bielik-RAG](https://github.com/Alght/Bielik-RAG) - ⚪ Bada skuteczność klasyfikacji polskich tekstów prawnych w architekturze RAG na modelu Bielik.
 - [PiotrTyrakowski/PolishLawLLM-Benchmark](https://github.com/PiotrTyrakowski/PolishLawLLM-Benchmark) - ⚪ Sprawdza modele językowe na prawie polskim.
 
 ## Poza progiem świeżości
