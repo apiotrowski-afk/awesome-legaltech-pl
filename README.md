@@ -53,7 +53,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [balwierz/sejm2git](https://github.com/balwierz/sejm2git) - ⚪ Pobiera akty z API Sejmu i nakłada nowelizacje, żeby odtworzyć tekst obowiązujący na daną datę. Historię materializuje w gicie: gałąź na nowelizację, scalenie w dniu wejścia w życie, wyniki głosowań w stopkach commitów.
 
 - [apatryda/polish-law](https://github.com/apatryda/polish-law) - 🟢 Tłumaczy akty prawne najpierw na Markdown, potem na Catalę, czyli język rules-as-code z Inrii. Układ katalogów odwzorowuje hierarchię źródeł prawa: konstytucja, ustawy, umowy międzynarodowe, rozporządzenia, akty prawa miejscowego.
-- [PolskiAgentW](https://github.com/PolskiAgentW) - 🟢 Akty, które API Sejmu daje tylko w PDF, w Markdown i JSON: Dziennik Ustaw od 2025 r. (w tym teksty jednolite kodeksów) i Monitor Polski od 2012 r., aktualizowane codziennie, a w toku luki Dziennika Ustaw z lat 2000–2011. Tekst pochodzi z nieoficjalnej konwersji, wiążący pozostaje PDF; konwerter eli2md ma licencję MIT.
+- [PolskiAgentW](https://github.com/PolskiAgentW) - 🟢 Akty, które API Sejmu daje tylko w PDF, w Markdown i JSON: Dziennik Ustaw od 2025 r. (w tym teksty jednolite kodeksów) i Monitor Polski od 2012 r., aktualizowane codziennie, a także luki Dziennika Ustaw z lat 2000–2011, komplet dwunastu roczników (stan 4.10.2026). Tekst pochodzi z nieoficjalnej konwersji, wiążący pozostaje PDF; konwerter eli2md ma licencję MIT.
 
 ### Konektory i klienty
 
