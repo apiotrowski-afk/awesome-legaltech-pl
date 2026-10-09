@@ -12,6 +12,7 @@ otwartosc:        # jedna z wartości poniżej — to jest wyróżnik katalogu
                   #   zrodlo-otwarte-narzedzie-zamkniete   dane publiczne, narzędzie nie
                   #   api-publiczne                   API dostępne, bez licencji OSS
                   #   komercyjne-z-progiem            freemium / darmowy tier
+                  #   komercyjne                      płatne, najwyżej okres próbny
                   #   licencja-nieokreslona           brak pliku LICENSE
 jurysdykcja:      # PL | PL+UE | wielojurysdykcyjny
 utrzymujacy:      # link do profilu, NIE nazwisko, NIE e-mail (minimalizacja)

@@ -30,6 +30,7 @@ Katalog obejmuje narzędzia, których przedmiotem jest samo prawo: akty prawne, 
 - 🟡 **Źródło otwarte, narzędzie zamknięte** - dane publiczne, software nie.
 - 🔵 **API publiczne** - dostęp otwarty, bez licencji OSS.
 - 🟠 **Komercyjne z progiem** - freemium albo darmowy poziom.
+- 🟣 **Komercyjne** - płatne, bez stałego darmowego poziomu, najwyżej z okresem próbnym.
 - ⚪ **Licencja nieokreślona** - brak pliku LICENSE, co nie znaczy *wolno*, tylko pełne prawo autorskie autora.
 
 W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych danych bez otwartego narzędzia. Katalogi anglosaskie tej kategorii nie mają, bo tam problem wygląda inaczej.
@@ -108,7 +109,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
 - [rodorn](https://github.com/rodorn) - 🟢 [Klient e-Doręczeń](https://github.com/rodorn/edoreczenia-klient) obsługuje interfejs UA API w Pythonie, nieoficjalnie. [Radar przetargów](https://github.com/rodorn/fluxlab-przetargi-radar) śledzi zamówienia publiczne.
 - [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizuje elektroniczne potwierdzenie odbioru.
-- [LegalKanban](https://legalkanban.pl) - 🟠 Prowadzi praktykę od leada przez ofertę (zakres z playbooka, cena, PDF, akceptacja w portalu i konwersja w sprawę) po Kanban i portal klienta. AI analizuje obciążenie zespołu, WIP i rentowność, proponuje przydział pracy oraz pokazuje wspólnikowi wąskie gardła kancelarii. Bezpieczeństwo i ochrona tajemnicy adwokackiej/radcowskiej jest na pierwszym miejscu.
+- [LegalKanban](https://legalkanban.pl) - 🟣 Prowadzi kancelarię na tablicy Kanban: od zapytania i oferty po sprawę, z terminami procesowymi liczonymi przez system i portalem, w którym klient sprawdza status i dokumenty. Asystent AI streszcza akta i pokazuje obciążenie zespołu. Płatny, 30 dni próby.
 
 ## Anonimizacja dokumentów
 

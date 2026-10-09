@@ -28,7 +28,7 @@ Narzędzie, dane albo model, których **przedmiotem jest samo prawo**: akty praw
 - [nazwa](https://github.com/owner/repo) - 🟢 Opis własny, jedno albo dwa zdania, zakończone kropką.
 ```
 
-Znacznik otwartości wybierz ze skali w README: 🟢 kod otwarty, 🟡 źródło otwarte a narzędzie zamknięte, 🔵 API publiczne, 🟠 komercyjne z progiem, ⚪ licencja nieokreślona.
+Znacznik otwartości wybierz ze skali w README: 🟢 kod otwarty, 🟡 źródło otwarte a narzędzie zamknięte, 🔵 API publiczne, 🟠 komercyjne z progiem, 🟣 komercyjne bez darmowego poziomu, ⚪ licencja nieokreślona.
 
 Wpis dodaj na końcu właściwej sekcji. Separatorem między linkiem a opisem jest zwykły myślnik z odstępami, nie półpauza.
 
