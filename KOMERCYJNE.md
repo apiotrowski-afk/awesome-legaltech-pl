@@ -67,9 +67,11 @@ Kryterium włączenia: produkt działa, ma ślad aktywności z lat 2025–2026 i
 - [LEX Expert AI](https://www.wolterskluwer.com/pl-pl/solutions/lex/expert-ai/dlaczego-lex-expert-ai) - 🟣 Czat Wolters Kluwer odpowiadający wyłącznie na podstawie treści LEX, z linkami do źródeł. W pakietach LEX.
 - [LexAlpha](https://lexalpha.pl) - 🟣 Pisze projekty pism procesowych bez promptowania, korzysta z bazy ponad miliona orzeczeń, tworzy i sprawdza umowy.
 - [Lexedit](https://lexedit.ai/pl) - 🟠 Agent researchu: przeszukuje orzecznictwo i ustawy, weryfikuje cytaty, pisze projekty pozwów i apelacji. Ma dodatek do Worda i pseudonimizację. 10 zapytań za darmo, potem od 149 zł miesięcznie.
+- [LexPilot](https://lexpilot.app) - 🟣 Zestaw kancelarii Kantorowski, Głąb i Wspólnicy: dodatek do Worda, bramki MCP do źródeł prawa, orzecznictwa i rejestrów dla Claude Desktop (OLA, OLA Plus), easyEPU do pozwów w EPU i pseudonimizacja Anonimio. Licencje na stanowiska, próba przez 14 dni. Darmowy CSM for Word jest w [głównym katalogu](README.md).
 - [LexTool](https://www.lextool.pl) - 🟣 Przygotowuje szkice pism procesowych i umów, analizuje ryzyka, porównuje wersje dokumentów. Od 249 zł miesięcznie, próba przez 7 dni.
 - [Libra (Wolters Kluwer)](https://libratech.ai) - 🟣 Workspace AI do researchu, redagowania i przeglądu dokumentów, od października 2026 jako dodatek do LEX.
 - [LOGiT FLOW](https://logitflow.pl) - 🟣 Platforma do dokumentów prawnych: OCR, anonimizacja, transkrypcja nagrań i porównywanie wersji. Od 299 zł miesięcznie, próba przez 7 dni.
+- [OmniaSI](https://omniasi.pl) - 🟠 Asystent researchu na publicznych bazach (ISAP/ELI, EUR-Lex, SAOS, CBOSA): odpowiada z cytatami, wskazuje nowelizacje spoza tekstów jednolitych i ocenia umowę fragment po fragmencie. 10 pytań za darmo, Pro od 149 zł miesięcznie, wersja lokalna bez internetu na wycenę.
 - [Omnilexia](https://omnilexia.com/pl) - 🟣 Prowadzi research na dokumentach użytkownika, podaje cytaty z orzecznictwa i przygotowuje projekty pism.
 - [PrawMi](https://prawmi.pl) - 🟠 Analizuje stan faktyczny, wskazując przepisy i orzeczenia, generuje dokumenty, ma wtyczkę i API. Wersja darmowa, Pro 150 zł miesięcznie. Lokalna nakładka MCP jest w [głównym katalogu](README.md).
 - [VAI Legal](https://vai.legal) - 🟣 Analizuje umowy klauzula po klauzuli względem prawa polskiego i unijnego.
