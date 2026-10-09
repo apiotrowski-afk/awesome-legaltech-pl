@@ -4,6 +4,8 @@
 
 Katalog obejmuje narzędzia, których przedmiotem jest samo prawo: akty prawne, orzecznictwo, umowy, procedura i praktyka kancelaryjna. Nie obejmuje operacji podatkowo-księgowych, bo KSeF, JPK i rejestry gospodarcze mają własne, liczne i dobrze utrzymane ekosystemy. Przy każdym wpisie widać, na jakich warunkach można go użyć w kancelarii.
 
+Produkty zamknięte, czyli SaaS-y, systemy wydawców i platformy, zbieramy osobno w [KOMERCYJNE.md](KOMERCYJNE.md).
+
 ## Contents
 
 - [Zasady](#zasady)
@@ -109,7 +111,6 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
 - [rodorn](https://github.com/rodorn) - 🟢 [Klient e-Doręczeń](https://github.com/rodorn/edoreczenia-klient) obsługuje interfejs UA API w Pythonie, nieoficjalnie. [Radar przetargów](https://github.com/rodorn/fluxlab-przetargi-radar) śledzi zamówienia publiczne.
 - [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizuje elektroniczne potwierdzenie odbioru.
-- [LegalKanban](https://legalkanban.pl) - 🟣 Prowadzi kancelarię na tablicy Kanban: od zapytania i oferty po sprawę, z terminami procesowymi liczonymi przez system i portalem, w którym klient sprawdza status i dokumenty. Asystent AI streszcza akta i pokazuje obciążenie zespołu. Płatny, 30 dni próby.
 
 ## Anonimizacja dokumentów
 
