@@ -77,6 +77,7 @@ Kryterium włączenia: produkt działa, ma ślad aktywności z lat 2025–2026 i
 - [VAI Legal](https://vai.legal) - 🟣 Analizuje umowy klauzula po klauzuli względem prawa polskiego i unijnego.
 - [VeroLex](https://verolex.ai/pl) - 🟣 Wyszukuje informację prawną ze źródłami, analizuje dokumenty i buduje bazę wiedzy organizacji. Ma opcję instalacji u klienta. Od 49 zł miesięcznie.
 - [Zapytaj Kodeks](https://zapytajkodeks.pl) - 🟣 Wyszukuje i analizuje przepisy i orzeczenia oraz przygotowuje projekty pism. Udostępnia API i widżet. Od 158 zł miesięcznie, oferta edukacyjna.
+- [PrawoAI](https://prawo-ai.com) - 🟣 Odpowiada z cytatami z ISAP, SAOS, CBOSA i EUREKI w brzmieniu na dzień pytania, składa 18 rodzajów pism do Worda na własnym szablonie, prowadzi teczki spraw i anonimizuje dane w przeglądarce przed wysłaniem. Od 79 zł miesięcznie, próba przez 7 dni bez karty.
 
 ## AI dla nie-prawników
 
@@ -102,6 +103,7 @@ Narzędzia dla osób bez wykształcenia prawniczego. Odpowiedź modelu nie zast�
 - [AIMON](https://aimon.pl) - 🟣 Narzędzie Currendy: monitoruje projekty aktów prawnych i ocenia wpływ zmian na podstawie grafu powiązań między aktami. Od 199,90 zł brutto za stanowisko, próba przez 14 dni.
 - [SejmPage](https://sejmpage.pl) - 🟠 Śledzi prace Sejmu, Dziennik Ustaw i Monitor Polski, wysyła alerty z podsumowaniem AI. Darmowy newsletter, plan płatny 139 zł miesięcznie.
 - [SzopaLabs Sygnatura](https://szopalabs.com) - 🟣 Przegląda nowe wyroki NSA i WSA według tematu, osobno sporządza raport ryzyka firmy po NIP. Od 49 zł miesięcznie.
+- [Standardy Prawa](https://standardyprawa.pl) - 🟠 System analiz prawnych sędziego Jacka Ignaczewskiego. Orzeczenia SN, NSA i sądów powszechnych, ujednolicone akty z archiwum od 1918 r. i wzory pism są dostępne bez rejestracji; komentarze orzecznicze, analizy linii orzeczniczych i asystent SP Czat AI z odnośnikami do źródeł wchodzą w pakiety premium.
 
 ## Sygnaliści
 

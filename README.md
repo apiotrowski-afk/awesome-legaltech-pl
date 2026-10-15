@@ -56,7 +56,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [balwierz/sejm2git](https://github.com/balwierz/sejm2git) - ⚪ Pobiera akty z API Sejmu i nakłada nowelizacje, żeby odtworzyć tekst obowiązujący na daną datę. Historię materializuje w gicie: gałąź na nowelizację, scalenie w dniu wejścia w życie, wyniki głosowań w stopkach commitów.
 
 - [apatryda/polish-law](https://github.com/apatryda/polish-law) - 🟢 Tłumaczy akty prawne najpierw na Markdown, potem na Catalę, czyli język rules-as-code z Inrii. Układ katalogów odwzorowuje hierarchię źródeł prawa: konstytucja, ustawy, umowy międzynarodowe, rozporządzenia, akty prawa miejscowego.
-- [PolskiAgentW](https://github.com/PolskiAgentW) - 🟢 Akty, które API Sejmu daje tylko w PDF, w Markdown i JSON: Dziennik Ustaw od 2025 r. (w tym teksty jednolite kodeksów) i Monitor Polski od 2012 r., aktualizowane codziennie, a także luki Dziennika Ustaw z lat 2000–2011, komplet dwunastu roczników (stan 4.10.2026). Tekst pochodzi z nieoficjalnej konwersji, wiążący pozostaje PDF; konwerter eli2md ma licencję MIT.
+- [PolskiAgentW](https://github.com/PolskiAgentW) - 🟢 Akty, które API Sejmu daje tylko w PDF, w Markdown i JSON: Dziennik Ustaw od 2025 r. (w tym teksty jednolite kodeksów) i Monitor Polski od 2012 r., aktualizowane codziennie, a także akty z lat 1918–2011, których API nie ma w HTML, w trzech zbiorach po dekadach; roczniki sprzed 2000 r. pochodzą z OCR skanów (stan 15.10.2026). Każdy zbiór leży też jako Parquet na Hugging Face. Tekst pochodzi z nieoficjalnej konwersji, wiążący pozostaje PDF; konwerter eli2md ma licencję MIT.
 - [nalegaluorg/nalegalu](https://github.com/nalegaluorg/nalegalu) - 🟢 Zestawia akty z Dziennika Ustaw w Markdown z orzecznictwem z bazy SAOS. Przy każdym akcie stoi liczba powiązanych orzeczeń, więc od razu widać, które ustawy sądy cytują najczęściej. Osobna strona pod adresem [nalegalu.org](https://nalegalu.org).
 
 ### Konektory i klienty
@@ -65,7 +65,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [leniwyposel/sejm-mcp](https://github.com/leniwyposel/sejm-mcp) - 🟢 Serwer MCP do API Sejmu i bazy aktów prawnych ELI.
 - [janisz/sejm-mcp](https://github.com/janisz/sejm-mcp) - 🟢 Wystawia przez MCP i prace Sejmu, i akty prawne: posłów, komisje, głosowania oraz interpelacje z API Sejmu, a dokumenty z bazy ELI. Napisany w Go.
 - [ObywatelTB/prawmi-mcp](https://github.com/ObywatelTB/prawmi-mcp) - 🟢 Lokalna nakładka stdio na zdalny serwer PrawMi, udostępniająca polskie akty prawne.
-- [jamarpl21/prawo-pl-eli](https://github.com/jamarpl21/prawo-pl-eli) - 🟢 Prawo polskie i unijne z oficjalnych źródeł, czyli ELI Sejmu oraz CELLAR i EUR-Lex, wystawione jako agent skills.
+- [jamarpl21/prawo-pl-eli](https://github.com/jamarpl21/prawo-pl-eli) - 🟢 Prawo polskie i unijne z oficjalnych źródeł, czyli ELI Sejmu oraz CELLAR i EUR-Lex, wystawione jako agent skills. Od wersji 2.2 (październik 2026) osiem skilli, w tym Portal Orzeczeń MS, dzienniki urzędowe województw, CBOSA, UODO i Centralny Rejestr Umów.
 - [apiotrowski-afk/legal-cite-pl](https://github.com/apiotrowski-afk/legal-cite-pl) - 🟢 Serwer MCP, który sprawdza aktualne brzmienie przepisu polskiego i unijnego prosto ze źródła. Ten sam utrzymujący wydaje weryfikację podmiotów w KRS i na białej liście VAT oraz pamięć trwałą dla asystentów.
 - [matematicsolutions](https://github.com/matematicsolutions) - 🟢 Seria serwerów MCP z weryfikowalnymi cytowaniami: SAOS, NSA i szesnaście WSA przez CBOSA, KIO, KRS, Dziennik Ustaw z Monitorem Polskim oraz interpretacje podatkowe z EUREKI. Wydaje też silnik anonimizacji, serwer nad korpusem legalize, infrastrukturę wiedzy prawnej *Repertorium* oraz dwa huby skilli prawniczych, polski i angielski. Ten sam autor utrzymuje konektory ELI dla Niemiec, Francji, Holandii, Słowacji, Turcji, USA i Singapuru.
 
@@ -84,6 +84,8 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [danielmskuza-blip/Orzeczenia-MS](https://github.com/danielmskuza-blip/Orzeczenia-MS) - 🟢 Udostępnia orzeczenia sądów powszechnych z portalu Ministerstwa Sprawiedliwości.
 - [Iskra-YT/sejmium](https://github.com/Iskra-YT/sejmium) - 🟢 Śledzi prace parlamentu na API Sejmu. Przydaje się, gdy trzeba wychwycić nowelizację, zanim trafi do Dziennika Ustaw.
 - [legaion/mcp-verifier](https://github.com/legaion/mcp-verifier) - ⚪ Waliduje serwery MCP dla polskiego prawa: dokumentację, schematy narzędzi i zgodność odpowiedzi.
+- [LK-Technology/prawnik-mcp](https://github.com/LK-Technology/prawnik-mcp) - 🟢 Serwer MCP, który podaje brzmienie przepisu na wskazany dzień z ELI Sejmu i EUR-Lex oraz orzeczenia z SAOS, SN, TK, KIO, UODO, EUREKI i CBOSA. Zanim asystent odpowie, sprawdza każdy cytat w źródle; zmyślony fragment blokuje eksport pisma.
+- [umowyai/polskie-prawo](https://github.com/umowyai/polskie-prawo) - 🔵 Plugin dla Claude Code, ChatGPT i innych klientów MCP nad zdalnym serwerem Umowy.AI: ustawy i rozporządzenia z Dziennika Ustaw w pełnym brzmieniu, także na wskazany dzień, ze statusem obowiązywania sprawdzanym codziennie w ELI. Serwer wymaga logowania e-mailem, w repozytorium są skille i wpis do rejestru MCP.
 
 ### Standardy i formaty
 
@@ -93,7 +95,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 
 ## Narzędzia i skille prawnicze
 
-- [michaleiatrak-star/Lex-Machina](https://github.com/michaleiatrak-star/Lex-Machina) - 🟢 Analizuje prawo i umowy, przygotowuje pisma procesowe i ocenia ryzyka w szesnastu dziedzinach prawa. Zabrania cytowania przepisów z pamięci. Istnieje [port na OpenAI Codex](https://github.com/tittlepl-baj-jk/Lex-Machina-for-OpenAI-Codex).
+- [michaleiatrak-star/Lex-Machina](https://github.com/michaleiatrak-star/Lex-Machina) - 🟢 Analizuje prawo i umowy, przygotowuje pisma procesowe i ocenia ryzyka w szesnastu dziedzinach prawa. Zabrania cytowania przepisów z pamięci. Istnieje [port na OpenAI Codex](https://github.com/tittlepl-baj-jk/Lex-Machina-for-OpenAI-Codex), a od września 2026 także [aplikacja desktopowa](https://github.com/michaleiatrak-star/Lex-machina-aplikacja) w Tauri, z kodem zastrzeżonym.
 - [crankshift/lawpowers](https://github.com/crankshift/lawpowers) - 🟢 Monorepo wtyczek prawniczych z podziałem na jurysdykcje, z wtyczką polską liczącą **22 skille**: przedawnienie, odsetki ustawowe, opłata sądowa, wartość przedmiotu sporu, alimenty, orzecznictwo frankowe, procedury ZUS, USC i cudzoziemców, jurysdykcja, konwencja nowojorska, przegląd umów B2B, nieruchomościowych i pojazdowych. Druga wtyczka obejmuje prawo ukraińskie.
 - [trosinski08/ai_agent_compliance](https://github.com/trosinski08/ai_agent_compliance) - ⚪ Analizuje sprawy AML i KYC w architekturze RAG, indeksując polskie przepisy o przeciwdziałaniu praniu pieniędzy wraz z materiałami GIIF i KNF.
 - [miskibin](https://github.com/miskibin) - ⚪ [Asystent RP](https://github.com/miskibin/asystent-rp) odpowiada obywatelom na pytania o prawo polskie i działa publicznie pod adresem chat.sejm-stats.pl. [Tygodnik sejmowy](https://github.com/miskibin/tygodnik-sejmowy) streszcza, co dzieje się w Sejmie. Oba korzystają z danych sejm-stats, które opisujemy w [ARCHIWUM.md](ARCHIWUM.md).
@@ -111,6 +113,9 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [jakatora/kredyt-ai](https://github.com/jakatora/kredyt-ai) - ⚪ Analizuje umowy kredytowe pod prawem polskim.
 - [rodorn](https://github.com/rodorn) - 🟢 [Klient e-Doręczeń](https://github.com/rodorn/edoreczenia-klient) obsługuje interfejs UA API w Pythonie, nieoficjalnie. [Radar przetargów](https://github.com/rodorn/fluxlab-przetargi-radar) śledzi zamówienia publiczne.
 - [tomkolp/e-doreczenia-wizualizacja-EPO](https://github.com/tomkolp/e-doreczenia-wizualizacja-EPO) - ⚪ Wizualizuje elektroniczne potwierdzenie odbioru.
+- [mTylewski/dora](https://github.com/mTylewski/dora) - ⚪ Sprawy o kary umowne za opóźnienie dewelopera: z umowy, aneksów i protokołu odbioru wyciąga terminy, cenę i stawkę kary, każdą wartość z cytatem i numerem strony, a karę liczy deterministyczny kod z testami. Flaguje klauzule abuzywne i składa wezwanie do zapłaty w DOCX na szablonie kancelarii; PDF jest anonimizowany w przeglądarce, zanim opuści komputer.
+- [marianwitkowski/generator-umow-o-dzielo](https://github.com/marianwitkowski/generator-umow-o-dzielo) - ⚪ Skill dla Claude Code, który z opisu w rozmowie składa komplet do umowy o dzieło z przeniesieniem praw do programu komputerowego: umowę ze specyfikacją i kryteriami odbioru, protokół odbioru i rachunek z wyliczeniem kosztów, zaliczki i składek, w jednym PDF. Działa też bez Claude, jako skrypt.
+- [wisniabobo](https://github.com/wisniabobo) - 🟢 Trenażery egzaminacyjne z [prawa konstytucyjnego](https://github.com/wisniabobo/Prawo-konstytucyjne), [administracyjnego](https://github.com/wisniabobo/Prawo-administracyjne) i [doktryn polityczno-prawnych](https://github.com/wisniabobo/doktryny-polityczno-prawne): fiszki z powtórkami SM-2, testy z wyjaśnieniami, kazusy i symulator egzaminu, bez konta i offline. Cytowane przepisy pobiera skrypt z API ELI, więc nie starzeją się po nowelizacji. Kod na MIT, treści CC BY-SA.
 
 ## Anonimizacja dokumentów
 
@@ -122,6 +127,7 @@ Wszystkie przetwarzają dokument lokalnie, zanim trafi on do modelu. Bez tej war
 - [empios/humanize-pl](https://github.com/empios/humanize-pl) - ⚪ Redaguje polskie teksty prawnicze regułowo, bez modelu językowego, ze ścieżką ostrożną dla umów, opinii, pism i regulaminów. Autor zastrzega wprost, że nie służy obchodzeniu detektorów AI.
 - [sebob/donotfeedai](https://github.com/sebob/donotfeedai) - ⚪ Podmienia imiona, PESEL, NIP, IBAN, telefony, adresy i pliki na dane fikcyjne, zanim trafią do ChatGPT, Claude'a albo Gemini, i przywraca je w odpowiedzi. Bez serwera dostawcy i bez telemetrii.
 - [LachPawel/Lethe](https://github.com/LachPawel/Lethe) - ⚪ Łączy wyrażenia regularne na danych strukturalnych z modelem PLLuM na rozpoznawaniu kontekstowym. Obsługuje dwadzieścia cztery kategorie danych i polską fleksję, przez API REST albo wiersz poleceń.
+- [DawidBochno/Anonimizacja-RODO](https://github.com/DawidBochno/Anonimizacja-RODO) - ⚪ Program desktopowy, który lokalnie czyści DOCX, PDF, skany i zdjęcia z PESEL, NIP, REGON, numerów dowodu, IBAN, adresów e-mail i telefonów, z kontrolą sum kontrolnych i własną listą słów. Powstał pod publikację w BIP i odpowiedzi na wnioski o informację publiczną.
 
 ## Modele, korpusy, benchmarki
 
