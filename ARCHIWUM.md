@@ -18,6 +18,7 @@ Wróć do listy głównej: [README.md](README.md).
 ## Narzędzia pomocnicze
 
 - [radarsu/validate-polish](https://github.com/radarsu/validate-polish) - 🟢 Waliduje numery PESEL, NIP, REGON i dowodu osobistego. Biblioteka ogólna, ale sumy kontrolne są te same, których używają narzędzia do anonimizacji.
+- [sebob/donotfeedai](https://github.com/sebob/donotfeedai) - ⚪ Podmienia imiona, PESEL, NIP, IBAN, telefony, adresy i pliki na dane fikcyjne, zanim trafią do ChatGPT, Claude'a albo Gemini, i przywraca je w odpowiedzi. Bez serwera dostawcy i bez telemetrii. Repozytorium niedostępne, od 15.10.2026 adres zwraca 404.
 
 ## Modele
 
