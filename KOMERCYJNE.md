@@ -78,6 +78,7 @@ Kryterium włączenia: produkt działa, ma ślad aktywności z lat 2025–2026 i
 - [VeroLex](https://verolex.ai/pl) - 🟣 Wyszukuje informację prawną ze źródłami, analizuje dokumenty i buduje bazę wiedzy organizacji. Ma opcję instalacji u klienta. Od 49 zł miesięcznie.
 - [Zapytaj Kodeks](https://zapytajkodeks.pl) - 🟣 Wyszukuje i analizuje przepisy i orzeczenia oraz przygotowuje projekty pism. Udostępnia API i widżet. Od 158 zł miesięcznie, oferta edukacyjna.
 - [PrawoAI](https://prawo-ai.com) - 🟣 Odpowiada z cytatami z ISAP, SAOS, CBOSA i EUREKI w brzmieniu na dzień pytania, składa 18 rodzajów pism do Worda na własnym szablonie, prowadzi teczki spraw i anonimizuje dane w przeglądarce przed wysłaniem. Od 79 zł miesięcznie, próba przez 7 dni bez karty.
+- [Lex-GPT](https://lex-gpt.pl) - 🟠 Analiza prawna na kredytach: research, pełna analiza i projekt dokumentu kosztują od 1 do 5 kredytów, a tryb podstawowy nie zużywa ich wcale. Plan Free daje 10 kredytów dziennie, Start kosztuje 59 zł, a Pro 179 zł brutto miesięcznie. Strona jest jeszcze w fazie testów i wpuszcza po haśle.
 
 ## AI dla nie-prawników
 
@@ -104,6 +105,7 @@ Narzędzia dla osób bez wykształcenia prawniczego. Odpowiedź modelu nie zast�
 - [SejmPage](https://sejmpage.pl) - 🟠 Śledzi prace Sejmu, Dziennik Ustaw i Monitor Polski, wysyła alerty z podsumowaniem AI. Darmowy newsletter, plan płatny 139 zł miesięcznie.
 - [SzopaLabs Sygnatura](https://szopalabs.com) - 🟣 Przegląda nowe wyroki NSA i WSA według tematu, osobno sporządza raport ryzyka firmy po NIP. Od 49 zł miesięcznie.
 - [Standardy Prawa](https://standardyprawa.pl) - 🟠 System analiz prawnych sędziego Jacka Ignaczewskiego. Orzeczenia SN, NSA i sądów powszechnych, ujednolicone akty z archiwum od 1918 r. i wzory pism są dostępne bez rejestracji; komentarze orzecznicze, analizy linii orzeczniczych i asystent SP Czat AI z odnośnikami do źródeł wchodzą w pakiety premium.
+- [Leksio](https://leksio.pl) - 🟠 System informacji prawnej nad aktami, orzeczeniami i interpretacjami podatkowymi ze źródeł urzędowych, z podsumowaniami wyszukiwania AI i konektorem MCP. Plan darmowy po zalogowaniu daje pięć dokumentów dziennie; SIP Pro kosztuje 49,99 zł, a SIP Pro+ 99,99 zł brutto miesięcznie.
 
 ## Sygnaliści
 
