@@ -59,6 +59,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [PolskiAgentW](https://github.com/PolskiAgentW) - 🟢 Akty, które API Sejmu daje tylko w PDF, w Markdown i JSON: Dziennik Ustaw od 2025 r. (w tym teksty jednolite kodeksów) i Monitor Polski od 2012 r., aktualizowane codziennie, a także akty z lat 1918–2011, których API nie ma w HTML, w trzech zbiorach po dekadach; roczniki sprzed 2000 r. pochodzą z OCR skanów (stan 15.10.2026). Każdy zbiór leży też jako Parquet na Hugging Face. Tekst pochodzi z nieoficjalnej konwersji, wiążący pozostaje PDF; konwerter eli2md ma licencję MIT.
 - [nalegaluorg/nalegalu](https://github.com/nalegaluorg/nalegalu) - 🟢 Zestawia akty z Dziennika Ustaw w Markdown z orzecznictwem z bazy SAOS. Przy każdym akcie stoi liczba powiązanych orzeczeń, więc od razu widać, które ustawy sądy cytują najczęściej. Osobna strona pod adresem [nalegalu.org](https://nalegalu.org).
 - [Sarverott/P-jol-roll](https://github.com/Sarverott/P-jol-roll) - 🟢 Pobiera akty z Dziennika Ustaw i przerabia je na Markdown, oczyszczony z elementów strony. Wynik leży na Hugging Face jako [zbiór danych](https://huggingface.co/datasets/Sarverott/polish_national_law_docs), obok surowych plików i podglądu online. Kod ma licencję AGPL, zbiór nie ma wskazanej licencji.
+- [lexifina/poland-law](https://github.com/lexifina/poland-law) - 🟢 Polskie prawo jako historia gita, w której autorem commitu jest akt zmieniający, a datą dzień wejścia zmiany w życie, więc `git blame` pokazuje, który akt nadał brzmienie danemu ustępowi. Konstytucja, ustawa o obywatelstwie i kodeksy mają pełną historię, pozostałe obowiązujące ustawy są w obecnym brzmieniu. Brzmienie przepisu na dzień daje jeden skrypt.
 
 ### Konektory i klienty
 
@@ -96,6 +97,9 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [andredzi/leksio-claude-plugin](https://github.com/andredzi/leksio-claude-plugin) - 🟠 Wtyczka do systemu informacji prawnej Leksio: jedenaście narzędzi tylko do odczytu nad aktami, orzeczeniami i interpretacjami podatkowymi, brzmienie przepisu na dzień i sprawdzanie cytatów. Wymaga konta Leksio; darmowy plan daje pięć researchy miesięcznie.
 - [lex-gpt/lex-mcp-plugin](https://github.com/lex-gpt/lex-mcp-plugin) - 🟠 Wtyczka do indeksu Lex MCP z przepisami, orzeczeniami, interpretacjami podatkowymi i regulacjami zawodowymi, ze skillem do researchu. Wymaga konta Lex-GPT z limitami planu; licencja MIT obejmuje tylko pliki wtyczki, nie serwer.
 - [kamilkaczmareksolutions/polish-mcp-servers](https://github.com/kamilkaczmareksolutions/polish-mcp-servers) - 🟢 Serwer MCP z trzynastoma narzędziami: jednym do prawa polskiego i dwunastoma do rejestrów publicznych. ⚠ Kod jest otwarty, ale każde wywołanie uruchamia płatny moduł na koncie Apify użytkownika.
+- [Emenowicz/polish-legal-mcp](https://github.com/Emenowicz/polish-legal-mcp) - 🟢 Zdalny serwer MCP z aktami z ELI, projektami ustaw z API Sejmu, prawem UE i orzecznictwem TSUE po polsku, orzeczeniami z SAOS i decyzjami Prezesa UODO. Każdą odpowiedź oznacza statusem weryfikacji, a osobne narzędzie wskazuje polskie akty wdrażające daną dyrektywę. Pisany z myślą o pracownikach administracji.
+- [otwarteprawo-pl/claude-plugins](https://github.com/otwarteprawo-pl/claude-plugins) - 🔵 Wtyczka do Claude Code dla serwera [otwarteprawo.pl](https://www.otwarteprawo.pl): brzmienie przepisu na wskazany dzień z linkiem do PDF Dziennika Ustaw albo Monitora Polskiego oraz trzy skille, do badania przepisu, sprawdzania cytowań w projekcie pisma i ustalania brzmienia z dnia zdarzenia. Klucz API jest bezpłatny, z dziennym limitem wywołań; sama wtyczka nie ma licencji.
+- [JacekSmi/PolishOpenData](https://github.com/JacekSmi/PolishOpenData) - 🟢 Biblioteki .NET i serwer MCP do rejestrów publicznych: odpisy z KRS, biała lista VAT ze sprawdzeniem rachunku, działki z ULDK i ceny transakcyjne nieruchomości z GUGiK. Waliduje też bez sieci numery NIP, REGON, KRS, NRB i ksiąg wieczystych.
 
 ### Standardy i formaty
 
@@ -103,6 +107,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [ELI](https://eur-lex.europa.eu/eli-register/about.html) - 🔵 European Legislation Identifier, identyfikator używany przez API Sejmu.
 - [Akoma Ntoso](https://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part1-vocabulary.html) - 🔵 Standard OASIS dla aktów prawnych, w Polsce niewdrożony.
 - [e-sad/dokumentacja](https://github.com/e-sad/dokumentacja) - 🟢 Porządkuje dokumentację techniczną usługi sieciowej elektronicznego postępowania upominawczego, czyli definicję WSDL i schematy XSD. Przydaje się powodom masowym i pełnomocnikom, którzy składają pozwy w EPU z własnego systemu, bez interfejsu WWW.
+- [MikolekN](https://github.com/MikolekN) - 🟢⚪ Dwa narzędzia do formatu schemaPL: [legal-act-to-xml](https://github.com/MikolekN/legal-act-to-xml) przerabia akt prawny z DOCX na XML w tym schemacie, a [schemapl-visualizer](https://github.com/MikolekN/schemapl-visualizer) robi z XML interaktywny HTML albo PDF w układzie Dziennika Ustaw, także w wersji dostępnej PDF/UA z dużym drukiem.
 
 ## Narzędzia i skille prawnicze
 
@@ -156,6 +161,7 @@ Prawie wszystkie przetwarzają dokument lokalnie, zanim trafi on do modelu; wyj�
 - [mikolaj92/anonimizator3000](https://github.com/mikolaj92/anonimizator3000) - 🟢 Portal do lokalnej anonimizacji dokumentów: Presidio z polskimi walidatorami i opcjonalnym modelem GLiNER. Ostatni krok usuwa tożsamość autorów z metadanych DOCX.
 - [faustyna77/anonimizator](https://github.com/faustyna77/anonimizator) - 🟢 Usługa dla kancelarii z logowaniem: przyjmuje PDF albo DOCX do 10 MB i zwraca plik w tym samym formacie z ukrytymi numerami PESEL, NIP, IBAN, e-mailami i telefonami. ⚠ W odróżnieniu od pozostałych pozycji przetwarza dokument na serwerze i przechowuje oryginał w S3, a mapę podmian trzyma zaszyfrowaną w bazie.
 - [NataliaZych/anonimizacja_danych](https://github.com/NataliaZych/anonimizacja_danych) - 🟢 Anonimizuje polskie umowy na dwa sposoby: przepływem n8n na wyrażeniach regularnych albo lokalnym modelem językowym w LM Studio. Wynik zapisuje w TXT, Markdown i JSON, gotowy do przekazania modelowi.
+- [AuCourDe/niewidka](https://github.com/AuCourDe/niewidka) - 🟢 Zamienia dane osobowe w polskim piśmie na znaczniki przed wysłaniem do czatu AI, a w odpowiedzi czatu wstawia je z powrotem. Działa lokalnie, także jako program dla Windows bez instalacji. Autor publikuje wynik testu na 30 fikcyjnych pismach: ukryte 443 z 447 danych osobowych.
 
 ## Modele, korpusy, benchmarki
 
