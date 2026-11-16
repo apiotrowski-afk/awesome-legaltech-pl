@@ -106,6 +106,7 @@ Narzędzia dla osób bez wykształcenia prawniczego. Odpowiedź modelu nie zast�
 - [SzopaLabs Sygnatura](https://szopalabs.com) - 🟣 Przegląda nowe wyroki NSA i WSA według tematu, osobno sporządza raport ryzyka firmy po NIP. Od 49 zł miesięcznie.
 - [Standardy Prawa](https://standardyprawa.pl) - 🟠 System analiz prawnych sędziego Jacka Ignaczewskiego. Orzeczenia SN, NSA i sądów powszechnych, ujednolicone akty z archiwum od 1918 r. i wzory pism są dostępne bez rejestracji; komentarze orzecznicze, analizy linii orzeczniczych i asystent SP Czat AI z odnośnikami do źródeł wchodzą w pakiety premium.
 - [Leksio](https://leksio.pl) - 🟠 System informacji prawnej nad aktami, orzeczeniami i interpretacjami podatkowymi ze źródeł urzędowych, z podsumowaniami wyszukiwania AI i konektorem MCP. Plan darmowy po zalogowaniu daje pięć dokumentów dziennie; SIP Pro kosztuje 49,99 zł, a SIP Pro+ 99,99 zł brutto miesięcznie.
+- [Prawnet](https://prawnet.pl) - 🟠 Wyszukiwarka orzeczeń sądów powszechnych, SN, TK i KIO oraz aktów prawnych z Dziennika Ustaw i Monitora Polskiego. Przy orzeczeniu pokazuje, które orzeczenia się na nie powołują, co stało się z nim w kolejnej instancji i ile trwają sprawy w danym sądzie; weryfikator sygnatur sprawdza, czy cytowane orzeczenie istnieje. Bez rejestracji; API i zdalny serwer MCP bezpłatnie z limitem, plany płatne dla większego ruchu.
 
 ## Sygnaliści
 
