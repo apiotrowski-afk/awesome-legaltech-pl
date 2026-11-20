@@ -144,6 +144,7 @@ W polskim prawie najwięcej wartości siedzi w 🟡 i 🔵, czyli w otwartych da
 - [ErykMikolajewicz/prawobiorca](https://github.com/ErykMikolajewicz/prawobiorca) - 🟢 Wyszukiwarka przepisów dla studentów dochodzących swoich praw na uczelni, z teczkami spraw i generowaniem wniosków w DOCX. Rozwija ją koło naukowe Politechniki Wrocławskiej, działa pod adresem prawobiorca.pl.
 - [elconcept/grounding-prawo](https://github.com/elconcept/grounding-prawo) - ⚪ Plugin do prowadzenia własnych spraw według prawa polskiego w Claude i Codeksie, złożony z 23 skilli, m.in. do pism procesowych, analizy dowodów, terminów i weryfikacji cytatów. Łączy Lex Machinę, skille z serii matematicsolutions i skille własne. Przepisy i sygnatury podaje tylko przez serwer MCP autora, który wymaga logowania.
 - [wppoland/polski](https://github.com/wppoland/polski) - ⚪ Wtyczka WooCommerce, która dostosowuje sklep do polskich wymogów konsumenckich: najniższa cena z 30 dni według dyrektywy Omnibus, ceny jednostkowe, przycisk *zamówienie z obowiązkiem zapłaty*, zgody z dziennikiem, prawo odstąpienia i GPSR. Obok darmowej wersji jest płatna wersja PRO.
+- [denis-solodov/prawnik-pl](https://github.com/denis-solodov/prawnik-pl) - 🟢 Skill do analizy spraw z zakresu prawa polskiego. Zawiera instrukcje weryfikacji źródeł urzędowych, szablony pism oraz lokalny kalkulator terminów, opłat i odsetek.
 
 ## Anonimizacja dokumentów
 
